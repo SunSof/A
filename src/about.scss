@@ -1,0 +1,100 @@
+@import "./mixins.scss";
+.b-about {
+  background-color: rgb(243, 243, 243);
+  padding-bottom: 70px;
+  @include md {
+  padding-bottom: 270px;
+  }
+  @include sm {
+  padding-bottom: 220px;
+  }
+&__h2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding-top: 100px;
+  @include md {
+  padding-top: 136px;
+  line-height: 28px;
+  }
+}
+&__h4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #686868;
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  @include md {
+  margin-bottom: 126px;
+  line-height: 28px;
+  }
+}
+&__h5 {
+  color: #000000;
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+&__p {
+  color: #000000;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; 
+  margin-bottom: 20px;
+}
+&__card-office{
+  padding: 0px 0px 0px 30px;
+  background-color: rgb(194, 194, 194);
+  flex: 1;
+  position: relative;
+  min-width: auto;
+  min-height: 260px;
+}
+&__img-office{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 120%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+}
+.b-about .slick-track{
+height: 360px;
+}
+
+.b-about .slick-dots {
+  position: absolute;
+  width: 100%;
+  height:auto;
+}
+.b-about .slick-dotted {
+  margin-bottom: 40px;
+  @include md {
+      margin-bottom: 0px;
+   }
+}
+.b-about .slick-slide {
+  @include sm {
+  height: 147%;
+  }
+  @include md {
+    height: 100%;
+ }
+}

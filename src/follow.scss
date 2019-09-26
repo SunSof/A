@@ -1,0 +1,29 @@
+@import "./mixins.scss";
+.b-follow {
+background-color: rgb(56, 56, 56);
+padding: 65px;
+  &__h5 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    padding-top: 21px;;
+  }
+  &__h6 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #888888;
+    font-family: Montserrat;
+    font-size: 15px;
+    padding-bottom: 42px;
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+}
