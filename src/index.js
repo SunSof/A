@@ -1,6 +1,6 @@
 import "./styles.scss";
-import "./hamburger.scss";
 import "./hello.scss";
+import "./start.scss";
 import "./about.scss";
 import "./services.scss";
 import "./services-card.scss";
