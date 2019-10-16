@@ -3,7 +3,7 @@ import "./2-hello.scss";
 import "./3-about.scss";
 import "./4-feature.scss";
 import "./5-submit.scss";
-import "./services-card.scss";
+import "./6-services.scss";
 import "./team-card.scss";
 import "./say.scss";
 import "./contacts.scss";
