@@ -1,0 +1,60 @@
+@import "./mixins.scss";
+.b-services {
+  &__btn-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &__repair {
+    cursor: pointer;
+    background-color:rgb(117, 117, 117);
+    background-image: url("img/repair.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 20px;
+    border:none;
+    padding: 20px;
+    &:hover {
+      background-color:rgb(0, 194, 145);
+    }
+  }
+  &__roller {
+    cursor: pointer;
+    background-color:rgb(117, 117, 117);
+    background-image: url("img/roller.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 20px;
+    border:none;
+    padding: 20px;
+    &:hover {
+      background-color:rgb(0, 194, 145);
+    }
+  }
+  &__game {
+    cursor: pointer;
+    background-color:rgb(117, 117, 117);
+    background-image: url("img/game.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 20px;
+    border:none;
+    padding: 20px;
+    &:hover {
+      background-color:rgb(0, 194, 145);
+    }
+  }
+  &__plug {
+    cursor: pointer;
+    background-color:rgb(117, 117, 117);
+    background-image: url("img/plug.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 20px;
+    border:none;
+    padding: 20px;
+    &:hover {
+      background-color:rgb(0, 194, 145);
+    }
+  }
+}
