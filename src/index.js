@@ -1,8 +1,8 @@
-import "./styles.scss";
-import "./hello.scss";
-import "./start.scss";
-import "./about.scss";
-import "./services.scss";
+import "./1-start.scss";
+import "./2-hello.scss";
+import "./3-about.scss";
+import "./4-feature.scss";
+import "./5-submit.scss";
 import "./services-card.scss";
 import "./team-card.scss";
 import "./say.scss";
@@ -10,6 +10,9 @@ import "./contacts.scss";
 import "./follow.scss";
 import "./say-slider.scss";
 import "./mixins.scss";
+
+
+
 
 $(function() {
   var banner = $(".b-card--bg1-hov")
