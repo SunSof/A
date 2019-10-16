@@ -1,0 +1,91 @@
+@import "./mixins.scss";
+.b-start {
+  z-index: -1;
+  background: url("img/tower.png")rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+
+  // // @include md {
+  // // padding-bottom: 190px;
+  // // }
+  &__btn-all{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  &__btn {
+    cursor:pointer;
+    background-color: Transparent;
+    border: none;
+    overflow: hidden;
+    outline:none;
+    color: white;
+    &:hover {
+      border: 1px solid;
+      border-radius: 15px;
+    }
+    // @include md {
+    //   margin-top: 163px;
+    // }
+    // @include sm {
+    //   margin: 179px 0 0 0;
+    // }
+  }
+  &__title-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(116, 113, 113);
+    padding: 100px 50px 70px 50px;
+  }
+  &__title {
+    text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+    color:white;
+    font-family: Abel;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    line-height: 45px;
+    // @include md {
+    // margin-top: 206px;
+    // margin-bottom: 0px;
+    // line-height: 40px;
+    // font-size: 45px;
+    // }
+  }
+  &__subtitle {
+    color:white;
+    font-family:Tajawal;
+    font-size: 16px;
+  }
+  &__arrow {
+    cursor: pointer;
+    background-color:rgb(0, 194, 145);
+    background-image: url("img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 20px;
+    border:none;
+    padding: 20px;
+    position:relative;
+    bottom: -30px;  
+    left:50%; 
+    margin: 80px 0;
+  }
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  //   // @include md {
+  //   //   padding: 40px 0 0 140px;
+  //   //  }
+  //   // @include sm {
+  //   //   padding: 27px 0 0 21px;
+  //   //  }
+  }
+  
+  
+}
