@@ -1,19 +1,21 @@
 @import "./mixins.scss";
 .b-feature {
-  &--bg1 {
-    background-image: url("img/style.jpg");
-    padding: 300px 10px 10px 14px;
-    background-color: rgba($color: #000000, $alpha: 0.5);
-
+  &__img {
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      background-blend-mode: darken;
+    }
   }
-  &--bg2 {
-    background-image: url("img/vintage.jpg");
+  &__cups {
+    background-image: url("img/cups.jpg");
     padding: 300px 10px 10px 14px;
-    background-color: rgba($color: #000000, $alpha: 0.5);
   }
-  &--bg3 {
-    background-image: url("img/branding.png");
+  &__books {
+    background-image: url("img/books.jpg");
     padding: 300px 10px 10px 14px;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+  &__whiskey {
+    background-image: url("img/whiskey.png");
+    padding: 300px 10px 10px 14px;
   }
 }
