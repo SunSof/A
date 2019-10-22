@@ -1,4 +1,38 @@
-.impressed {
-    background: url("img/man.png")rgba(0, 0, 0, 0.5);
-  background-blend-mode: darken;
+.b-impressed {
+  background: url("img/man.png") rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center;
+  &__h2 {
+    color: #ffffff;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+  &__h4 {
+    color: #ffffff;
+    font-family:Tajawal;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  &__h3 {
+    color: #ffffff;
+    font-family:Tajawal;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  &__p {
+    color: #ffffff;
+    font-family:Tajawal;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
 }
