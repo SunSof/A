@@ -1,0 +1,80 @@
+.b-portfolio {
+    background-color:rgb(211, 211, 211);
+    &__btn {
+    cursor:pointer;
+    background-color: Transparent;
+    border: none;
+    overflow: hidden;
+    outline:none;
+    color: white;
+        &:hover {
+        border-bottom: 1px solid  rgb(0, 194, 145);
+        }
+    }
+    &__btn-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    &__start-p {
+    font-family:Tajawal;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    }
+    &__port1 {
+        background-image: url("img/port1.png");
+        background-size: 100%;
+        padding: 50px;
+    }
+    &__port2 {
+        background-image: url("img/port2.png");
+        padding: 50px;
+    }
+    &__port3 {
+        background-image: url("img/port3.png");
+    }
+    &__port4 {
+        background-image: url("img/port4.png");
+    }
+    &__port5 {
+        background-image: url("img/port5.png");
+    }
+    &__port6 {
+        background-image: url("img/port6.png");
+    }
+    &__port7 {
+        background-image: url("img/port7.png");
+    }
+    &__port8 {
+        background-image: url("img/port8.png");
+    }
+    &__port9 {
+        background-image: url("img/port9.png");
+    }
+    &__port10 {
+        background-image: url("img/port10.png");
+    }
+    &__port11 {
+        background-image: url("img/port11.png");
+    }
+    &__port12 {
+        background-image: url("img/port12.png");
+    }
+    &__start-project {
+        background: url("img/project.png") rgb(0, 100, 75, 0.7);
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    &__start-btn {
+    cursor:pointer;
+    background-color: Transparent;
+    border: 1px solid;
+    border-radius: 15px;
+    overflow: hidden;
+    outline:none;
+    color: white;
+    }
+}
