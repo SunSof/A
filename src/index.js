@@ -5,6 +5,7 @@ import "./4-feature.scss";
 import "./5-submit.scss";
 import "./6-services.scss";
 import "./7-impressed.scss";
+import "./8-portfolio.scss";
 import "./team-card.scss";
 import "./say.scss";
 import "./contacts.scss";
