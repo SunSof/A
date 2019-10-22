@@ -1,6 +1,7 @@
 @import "./mixins.scss";
 .b-services {
-  &__btn-all{
+  background-color:rgb(243, 243, 243);
+  &__btn-all {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
