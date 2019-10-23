@@ -1,4 +1,7 @@
 @import "./mixins.scss";
 .b-testimonials {
-  
+  background-color: rgb(231, 231, 231);
+&__card {
+  background-color: #fff;
+}
 }

@@ -1,0 +1,22 @@
+.b-subscribe {
+  background: url("img/subscribe.png")rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  &__all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__btn {
+    cursor:pointer;
+    background-color: rgb(0, 195, 145);
+    border: none;
+    overflow: hidden;
+    outline:none;
+    color: white;
+    &__input {
+      background-color: Transparent;
+      border: 1px solid;
+
+    }
+  }
+}
