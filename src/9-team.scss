@@ -1,25 +1,10 @@
 @import "./mixins.scss";
-.b-team-card {
-  background-color: aqua;
-  position: absolute; 
-  z-index: 1;
-  opacity: 0;
-  max-width: 250px;
-  max-height: 250px;
-  padding: 20px;
-  ::before {
-    content: '';
-    left: 0; top: -30px;
-    width: 0; height: 0;
-    border-style: solid;
-    border-width: 15px;
-    border-color: transparent transparent aqua;
-    position: absolute;
-  }
+.b-team {
   &__p {
     font-family: Raleway;
     font-size: 13px;
     line-height: 20px;
+    color: black;
   }
   &__h5 {
     font-family: Merriweather;
@@ -28,6 +13,7 @@
     line-height: 28px;
     text-align: center;
     display: inline;
+    color: black;
   }
   &__h4 {
     font-family: "Merriweather - Bold";
@@ -35,18 +21,6 @@
     font-weight: 700;
     text-align: center;
     display: inline;
+    color: black;
   }
-  &__member {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  &__member:hover .b-team-card {
-    opacity: 1;
-   }
-}
-
-.row{
-  margin-bottom: 5px;
 }

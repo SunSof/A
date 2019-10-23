@@ -1,0 +1,20 @@
+@import "./mixins.scss";
+.b-loved {
+  background: url("img/love.png") rgb(24, 24, 24);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  padding:30px;
+  text-align: center;
+  &__btn {
+    cursor:pointer;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: Transparent;
+    font-family:Tajawal;
+    font-size: 14px;
+    color: white;
+  }
+  &__p {
+    color: white;
+  }
+}
