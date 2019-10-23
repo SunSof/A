@@ -9,9 +9,15 @@ import "./8-portfolio.scss";
 import "./9-team.scss";
 import "./10-loved.scss";
 import "./11-testimonials.scss";
-import "./follow.scss";
-import "./say-slider.scss";
+import "./12-latest.scss";
+import "./13-price.scss";
+import "./14-subscribe.scss";
+import "./15-contacts.scss";
+import "./16-map.scss";
+import "./17-follow.scss";
 import "./mixins.scss";
+
+
 
 
 
