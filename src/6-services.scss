@@ -1,23 +1,38 @@
 @import "./mixins.scss";
 .b-services {
   background-color:rgb(243, 243, 243);
+  padding-bottom: 97px;
   &__btn-all {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
+    left: 30px;
+    top: 67px;
   }
   &__btn {
     cursor: pointer;
     background-color:rgb(117, 117, 117);
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 20px 20px;
+    border-radius: 30px;
     border:none;
-    padding: 20px;
+    padding: 26px;
     width: 20px;
+    margin: 9px;
     &:hover {
       background-color:rgb(0, 194, 145);
     }
+  }
+  &__text {
+    position: relative;
+    right: 253px;
+    top: 119px;
+  }
+  &__diagramma {
+    position: relative;
+    top: 106px;
+    right: 51px;
   }
   &__repair {
     background-image: url("img/repair.png");
