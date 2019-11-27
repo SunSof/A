@@ -1,16 +1,16 @@
 @import "./mixins.scss";
-.b-hello {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+.b-hello { 
+  &__text {
+    padding: 114px 168px 0 250px;
+  }
   &__title {
     font-family: Abel;
     font-size: 20px;
+    letter-spacing: 4px;
   }
   &__subtitle {
     font-family:Tajawal;
-    font-size: 12px;
+    font-size: 16px;
   }
   // &__ipad {
   //  position: relative;
@@ -19,9 +19,18 @@
   &__btn {
     cursor:pointer;
     border: 1px solid;
-    border-radius: 15px;
+    border-radius: 29px;
     background-color: Transparent;
     font-family:Tajawal;
-    font-size: 14px;
+    font-size: 18px;
+    padding: 6px 32px 6px 32px;
+    left: -9px;
+    top: 35px;
+    position: relative;
+  }
+  &__ipad {
+    padding: 88px 0 57px 0;
+    position: relative;
+    left: -30px;
   }
 }
