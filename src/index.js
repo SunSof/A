@@ -15,6 +15,7 @@ import "./14-subscribe.scss";
 import "./15-contacts.scss";
 import "./16-map.scss";
 import "./17-follow.scss";
+import "./18-words.scss";
 import "./mixins.scss";
 
 
