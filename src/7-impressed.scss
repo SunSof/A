@@ -3,36 +3,52 @@
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: center;
+  &__text {
+    position: relative;
+    top: 71px;
+    left: 81px;
+  }
   &__h2 {
     color: #ffffff;
     font-family: Abel;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 700;
     line-height: 32px;
     text-transform: uppercase;
+    letter-spacing: 2px;
   }
   &__h4 {
     color: #ffffff;
     font-family:Tajawal;
-    font-size: 12px;
+    font-size: 17px;
     font-weight: 400;
-    line-height: 26px;
     text-transform: uppercase;
   }
   &__h3 {
     color: #ffffff;
     font-family:Tajawal;
-    font-size: 10px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 14px;
     text-transform: uppercase;
   }
   &__p {
     color: #ffffff;
-    font-family:Tajawal;
-    font-size: 9px;
+    font-family:Montserrat;
+    font-size: 17px;
     font-weight: 400;
     line-height: 26px;
-    text-transform: uppercase;
   }
+}
+.logo {
+position: relative;
+left: 244px;
+bottom: -28px;
+z-index: 2;
+}
+.mac {
+position: relative;
+left: 145px;
+top: -105px;
+z-index: 1;
 }
