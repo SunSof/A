@@ -6,7 +6,7 @@
   border: none;
   overflow: hidden;
   outline:none;
-  color: white;
+  color: rgb(0, 0, 0);
     &:hover {
     border-bottom: 1px solid  rgb(0, 194, 145);
     }
@@ -22,14 +22,30 @@
   color: #fff;
   text-align: center;
   }
+  &__h2 {
+  font-family:Tajawal;
+  font-size: 22px;
+  color:  rgb(0, 194, 145);
+  text-transform: uppercase;
+  text-align: center;
+  }
+  &__h4 {
+    font-family:Tajawal;
+    font-size: 16px;
+    text-align: center;
+  }
   &__port1 {
-    background-image: url("img/port1.png");
     background-size: 100%;
     padding: 50px;
+    :hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 2;
+      background-blend-mode: darken;
+    }
   }
   &__port2 {
       background-image: url("img/port2.png");
-      padding: 50px;
+     
   }
   &__port3 {
       background-image: url("img/port3.png");
