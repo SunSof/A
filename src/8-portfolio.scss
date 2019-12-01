@@ -15,13 +15,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
+  top: 88px;
+  padding-bottom: 156px;
   }
-  &__start-p {
-  font-family:Tajawal;
-  font-size: 16px;
-  color: #fff;
-  text-align: center;
-  }
+  
   &__h2 {
   font-family:Tajawal;
   font-size: 22px;
@@ -33,49 +31,40 @@
     font-family:Tajawal;
     font-size: 16px;
     text-align: center;
+    color: #fff;
   }
   &__port1 {
-    background-size: 100%;
-    padding: 50px;
-    :hover {
-      background-color: rgba(0, 0, 0, 0.3);
-      z-index: 2;
-      background-blend-mode: darken;
-    }
-  }
-  &__port2 {
-      background-image: url("img/port2.png");
-     
-  }
-  &__port3 {
-      background-image: url("img/port3.png");
-  }
-  &__port4 {
-      background-image: url("img/port4.png");
   }
   &__port5 {
-      background-image: url("img/port5.png");
-  }
+    position: relative;
+    bottom: -6px;
+    }
   &__port6 {
-      background-image: url("img/port6.png");
-  }
+    position: relative;
+    bottom: 124px;
+    }
   &__port7 {
-      background-image: url("img/port7.png");
-  }
+    position: relative;
+    bottom: 50px;
+    }
   &__port8 {
-      background-image: url("img/port8.png");
-  }
+    position: relative;
+    top: 9px;
+    }
   &__port9 {
-      background-image: url("img/port9.png");
-  }
+    position: relative;
+    }
   &__port10 {
-      background-image: url("img/port10.png");
+    position: relative;
+    bottom: 148px;
   }
   &__port11 {
-      background-image: url("img/port11.png");
+    position: relative;
+    bottom: 44px;
   }
   &__port12 {
-      background-image: url("img/port12.png");
+    position: relative;
+    bottom: 90px;
   }
   &__start-project {
     background: url("img/project.png") rgb(0, 100, 75, 0.7);
@@ -84,14 +73,52 @@
     background-position: center;
     background-size: 100%;
     text-align: center;
+    position: relative;
+    bottom: 104px;
+    padding-bottom: 16px;
   }
   &__start-btn {
-  cursor:pointer;
+  cursor: pointer;
   background-color: Transparent;
   border: 1px solid;
-  border-radius: 15px;
   overflow: hidden;
-  outline:none;
+  outline: none;
   color: white;
+  border-radius: 30px;
+  padding: 4px 20px 4px 20px;
+  position: relative;
+  bottom: 47px;
+  left: 16px;
   }
+  &__start-p {
+    font-family:Tajawal;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 52px;
+    }
+}
+.b-portfolio-card {
+  background-color:rgba(0, 0, 0, 0.5);
+  position: absolute; 
+  z-index: 1;
+  opacity: 0;
+  max-width: 260px;
+  max-height: 360px;
+  padding: 147px 0 135px 0;
+  ::before {
+    content: '';
+    left: 0; top: -30px;
+    width: 0; height: 0;
+    position: absolute;
+  }
+  &__member {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__member:hover .b-portfolio-card {
+    opacity: 1;
+   }
 }
