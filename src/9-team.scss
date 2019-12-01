@@ -1,5 +1,17 @@
 @import "./mixins.scss";
 .b-team {
+  padding-bottom: 213px;
+  &__img {
+  position: relative;
+  left: 36px;
+    top: 65px;
+  }
+  &__text {
+  position: relative;
+  text-align: right;
+  top: 168px;
+  left: 304px;
+  }
   &__p {
     font-family: Raleway;
     font-size: 13px;
