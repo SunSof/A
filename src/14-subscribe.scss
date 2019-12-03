@@ -1,10 +1,37 @@
 .b-subscribe {
   background: url("img/subscribe.png")rgba(0, 0, 0, 0.8);
   background-blend-mode: darken;
+  padding-bottom: 99px;
   &__all {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 76px;
+  }
+  &__h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding-top: 72px;
+    letter-spacing: 5px;
+  }
+  &__h4 {
+    display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #686868;
+  font-family: Tajawal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-top: 16px;
   }
   &__btn {
     cursor:pointer;
@@ -13,10 +40,16 @@
     overflow: hidden;
     outline:none;
     color: white;
-    &__input {
-      background-color: Transparent;
-      border: 1px solid;
-
-    }
+    padding: 8px 53px;
+    margin-left: 9px;
   }
+  &__input {
+    background-color: Transparent;
+    border: 1px solid;
+    color: #ffffff;
+    font-family: Abel;
+    font-size: 16px;
+    padding: 6px 35px 6px 25px;
+  }
+
 }
