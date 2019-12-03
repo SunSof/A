@@ -1,7 +1,35 @@
 @import "./mixins.scss";
 .b-testimonials {
   background-color: rgb(231, 231, 231);
+  padding-bottom: 142px;
 &__card {
   background-color: #fff;
+  padding: 79px;
+  position: relative;
+  top: 46px;
+}
+&__img {
+position: relative;
+bottom: 28px;
+}
+&__text {
+position: relative;
+right: 308px;
+bottom: 26px;
+}
+&__h2 {
+  color: rgb(0, 194, 145);
+  font-weight: bold;
+  font-family: Tajawal;
+  font-size: 18px;
+}
+&__h3 {
+  font-family: Tajawal;
+  font-size: 18px;
+}
+&__p {
+  color: rgb(87, 87, 87);
+  font-family: Montserrat;
+  font-size: 14px;
 }
 }
