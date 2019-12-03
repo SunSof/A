@@ -1,16 +1,46 @@
 @import "./mixins.scss";
 .b-price {
   background-color: rgb(228, 228, 228);
+  padding-bottom: 79px;
+  &__card {
+    padding-top: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
   &__name {
-    background-color:rgb(0, 195, 145);
-color: rgb(255, 255, 255);
+  background-color:rgb(0, 195, 145);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 20px 33px 26px 34px;
+  height: 69px;
+  width: 231px;
   }
   &__cost {
-background-color: #fff;
-color: rgb(0, 195, 145);
+  background-color: #fff;
+  color: rgb(0, 195, 145);
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  height: 69px;
+  width: 231px;
+  padding: 48px 0;
   }
   &__month {
-background-color: #fff;
-color: rgb(0, 195, 145);
+    font-size: 22px;;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 69px;
+  width: 231px;
+  padding-bottom: 141px;
+  }
+  &__center {
+
   }
 }
