@@ -1,29 +1,72 @@
 .b-contacts {
 background: rgb(223, 223, 223);
+padding-bottom: 143px;
   &__card {
     display: flex;
-  flex-direction: row;
-  justify-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  &__bg-all {
+    background-blend-mode: darken;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
   }
   &__bg1 {
   background: url("img/office.jpg")rgba(0, 0, 0, 0.5);
-  background-blend-mode: darken;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 40px;
   }
   &__bg2 {
-      background: url("img/office2.jpeg")rgba(0, 0, 0, 0.5);
-      background-blend-mode: darken;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      padding: 40px;
+  background: url("img/office2.jpeg")rgba(0, 0, 0, 0.5);
   }
   &__bg3 {
   background: url("img/office3.jpg")rgba(0, 0, 0, 0.5);
-  background-blend-mode: darken;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 40px;
+}
+&__title {
+  background-color: #fff;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  height: 69px;
+  width: 231px;
+  padding: 48px 0;
+}
+&__subtitle {
+  background-color: #fff;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  height: 69px;
+  width: 231px;
+  padding: 48px 0; 
+}
+&__up {
+  padding: 76px;
+}
+&__input {
+  background-color: Transparent;
+  border: 1px solid;
+  color: #c4c4c4;
+  font-family: Abel;
+  font-size: 16px;
+  padding: 8px 0;
+  margin: 0;
+}
+&__empty {
+  height: 212px;
+  width: 945px;
+  position: relative;
+  left: -19px;
+  margin: 23px;
+}
+&__btn {
+  cursor:pointer;
+  background-color: rgb(0, 195, 145);
+  border: none;
+  overflow: hidden;
+  outline:none;
+  color: white;
+  padding: 8px 431px;
+  position: relative;
+  left: 6px;
 }
 }
