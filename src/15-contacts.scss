@@ -10,37 +10,37 @@ padding-bottom: 143px;
     background-blend-mode: darken;
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 20px;
+    position: relative;
+    top: 43px;
   }
   &__bg1 {
   background: url("img/office.jpg")rgba(0, 0, 0, 0.5);
+  background-size: 100%;
+  padding: 60px 122px;
   }
   &__bg2 {
   background: url("img/office2.jpeg")rgba(0, 0, 0, 0.5);
+  background-size: 100%;
+  padding: 48px 126px;
   }
   &__bg3 {
   background: url("img/office3.jpg")rgba(0, 0, 0, 0.5);
+  background-size: 100%;
+  padding: 51px 123px;
 }
 &__title {
   background-color: #fff;
   font-size: 12px;
   text-align: center;
   margin: 0;
-  height: 69px;
-  width: 231px;
+  width: 287px;
   padding: 48px 0;
-}
-&__subtitle {
-  background-color: #fff;
-  font-size: 12px;
-  text-align: center;
-  margin: 0;
-  height: 69px;
-  width: 231px;
-  padding: 48px 0; 
+  position: relative;
+  top: 42px;
 }
 &__up {
   padding: 76px;
+  margin-bottom: 54px;
 }
 &__input {
   background-color: Transparent;
