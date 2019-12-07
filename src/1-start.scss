@@ -1,60 +1,99 @@
 @import "./mixins.scss";
 .b-start {
+  background-color: rgb(0, 195, 145);
+  @include md {
   z-index: -1;
   background: url("img/tower.png")rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
   background-repeat: no-repeat;
-
-  // // @include md {
-  // // padding-bottom: 190px;
-  // // }
+  }
   &__logo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 48px 0 0 62px;
-  //   // @include md {
-  //   //   padding: 40px 0 0 140px;
-  //   //  }
-  //   // @include sm {
-  //   //   padding: 27px 0 0 21px;
-  //   //  }
+    padding-top: 24px;
+    @include md {
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+      padding: 48px 0 0 62px;
+     }
+    @include sm {
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+      padding: 27px 0 0 21px;
+     }
   }
-  &__btn-all{
+  &__btn-all {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     position: relative;
-    top: -24px;
-    left: -43px;
+    top: 22px;
+    left: -10px;
+    @include md {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+      top: -24px;
+      left: -43px;
+  }
+    @include sm {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+      top: -19px;
+      left: 8px;
+    }
   }
   &__btn {
-    cursor:pointer;
-    background-color: Transparent;
-    border: none;
-    overflow: hidden;
-    outline:none;
-    color: white;
-    text-align: center;
-    padding: 0 17px 0 16px;
-    &:hover {
-      border: 1px solid;
-      border-radius: 15px;
+    display: none;
+    @include md {
+      display: inline;
+      cursor:pointer;
+      background-color: Transparent;
+      border: none;
+      overflow: hidden;
+      outline:none;
+      color: white;
+      text-align: center;
+      padding: 0 17px 0 16px;
+      &:hover {
+        border: 1px solid;
+        border-radius: 15px;
+      }
     }
-    // @include md {
-    //   margin-top: 163px;
-    // }
-    // @include sm {
-    //   margin: 179px 0 0 0;
-    // }
+    @include sm {
+      font-size: 14px;
+      cursor:pointer;
+      background-color: Transparent;
+      border: none;
+      overflow: hidden;
+      outline: none;
+      color: white;
+      text-align: center;
+      padding: 0 17px 0 16px;
+      &:hover {
+        border: 1px solid;
+        border-radius: 15px;
+      }
+    }
   }
   &__title-selection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: rgb(116, 113, 113);
+    padding: 91px 0 0 0;
+    @include md {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 134px 50px 70px 50px;
+    }
   }
   &__title {
     text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
@@ -67,13 +106,6 @@
     margin-bottom: 0px;
     line-height: 45px;
     letter-spacing: 5px;
-  
-    // @include md {
-    // margin-top: 206px;
-    // margin-bottom: 0px;
-    // line-height: 40px;
-    // font-size: 45px;
-    // }
   }
   &__subtitle {
     color:white;
@@ -84,16 +116,31 @@
   }
   &__arrow {
     cursor: pointer;
-    background-color:rgb(0, 195, 145);
     background-image: url("img/arrow.png");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 20px 20px;
-    border:none;
+    border: 1px solid;
+    background-color: Transparent;
+    color:white;
     padding: 19px;
     position: relative;
+    bottom: 13px;
+    left: 45%;
+    margin: 85px 0;
+    @include md {
+      cursor: pointer;
+    background-color:rgb(0, 195, 145);
+    border:none;
     bottom: -16px;
     left: 50%;
     margin: 85px -23px;
+    }
+    @include sm {
+    bottom: 58px;
+    left: 49%;
+    margin: 82px 0;
+    }
   }
+ 
 }
