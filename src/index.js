@@ -23,37 +23,37 @@ import "./mixins.scss";
 
 
 
-// $(function() {
-//   var banner = $(".b-card--bg1-hov")
+$(function() {
+  var banner = $(".b-card--bg1-hov")
 
-//   // handle click and add class
-//   $(".js-open").on("click", function () {
-//     banner.addClass("alt")
-//   });
+  // handle click and add class
+  $(".js-open").on("click", function () {
+    banner.addClass("alt")
+  });
 
-//   // handle click and remove class
-//   $(".js-close").on("click", function () {
-//     banner.removeClass("alt")
-//   });
+  // handle click and remove class
+  $(".js-close").on("click", function () {
+    banner.removeClass("alt")
+  });
 
-//   $(".js-slider").slick({
-//     dots: true
-//   });
+  $(".js-slider").slick({
+    dots: true
+  });
 
-//   $(".js-about-slider").slick({
-//     dots: true,
-//     arrows: false
-//   });
+  $(".js-about-slider").slick({
+    dots: true,
+    arrows: false
+  });
 
-//  $(".b-hello__btn-contact-us").on('click', function(event) {
+ $(".b-hello__btn-contact-us").on('click', function(event) {
 
-//     var target = $(".b-contacts__all");
+    var target = $(".b-contacts__all");
 
-//     if( target.length ) {
-//         event.preventDefault();
-//         $("html, body").stop().animate({
-//             scrollTop: target.offset().top
-//         }, 1000);
-//     }
-// });
-// });
+    if( target.length ) {
+        event.preventDefault();
+        $("html, body").stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
+});
