@@ -1,7 +1,13 @@
 @import "./mixins.scss";
 .b-hello { 
   &__text {
-    padding: 114px 168px 0 250px;
+  padding: 36px 0 20px;
+  @include md {
+  padding: 114px 168px 0 250px;
+  }
+  @include sm {
+    padding: 62px 43px 0 20px;
+    }
   }
   &__title {
     font-family: Abel;
