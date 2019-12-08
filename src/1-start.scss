@@ -6,6 +6,10 @@
   background: url("img/tower.png")rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
   background-repeat: no-repeat;
+  @include xl {
+    background-color: rgb(0, 195, 145);
+    background-image: none;
+  }
   }
   &__logo {
     display: flex;
@@ -58,7 +62,6 @@
       background-color: Transparent;
       border: none;
       overflow: hidden;
-      outline:none;
       color: white;
       text-align: center;
       padding: 0 17px 0 16px;
@@ -136,11 +139,12 @@
     left: 50%;
     margin: 85px -23px;
     }
-    @include sm {
-    bottom: 58px;
-    left: 49%;
-    margin: 82px 0;
-    }
+    @include xl {
+      border-radius: 20px 20px;
+      border: 1px solid;
+      background-color: Transparent;
+      color:white;
+      padding: 19px;
   }
- 
+}
 }
