@@ -9,16 +9,25 @@
   outline:none;
   color: rgb(0, 0, 0);
     &:hover {
-    border-bottom: 1px solid  rgb(0, 194, 145);
+    border-bottom: 1px solid  rgb(15, 32, 28);
     }
   }
   &__btn-all {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   position: relative;
-  top: 88px;
-  padding-bottom: 156px;
+  top: 41px;
+  padding-bottom: 99px;
+  @include md {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 88px;
+    padding-bottom: 156px;
+  }
   }
   
   &__h2 {
@@ -34,39 +43,107 @@
     text-align: center;
     color: #fff;
   }
-  &__port1 {
+  &__port3 {
+    position: relative;
+    bottom: 3px;
+    @include md {
+      bottom: 0;
+    }
+  }
+  &__port4 {
+    position: relative;
+    bottom: 78px;
+    @include md {
+      bottom: 0;
+    }
   }
   &__port5 {
     position: relative;
-    bottom: -6px;
+    bottom: 46px;
+    @include md {
+      bottom: -6px;
+    }
     }
   &__port6 {
     position: relative;
+    bottom: 83px;
+    @include md {
     bottom: 124px;
+    }
     }
   &__port7 {
     position: relative;
+    bottom: 51px;
+    @include md {
     bottom: 50px;
+    }
     }
   &__port8 {
     position: relative;
+    bottom: 99px;
+    @include md {
     top: 9px;
+    }
     }
   &__port9 {
     position: relative;
+    bottom: 52px;
+    @include md {
+      bottom: 0;
+    }
     }
   &__port10 {
     position: relative;
+    bottom: 166px;
+    @include md {
     bottom: 148px;
+    }
   }
   &__port11 {
     position: relative;
+    bottom: 139px;
+    @include md {
     bottom: 44px;
+    }
   }
   &__port12 {
     position: relative;
+    bottom: 167px;
+    @include md {
     bottom: 90px;
+    }
   }
+  .b-portfolio-card {
+    display: none;
+    @include md {
+    display: inline;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: absolute; 
+    z-index: 1;
+    opacity: 0;
+    max-width: 260px;
+    max-height: 360px;
+    padding: 147px 0 135px 0;
+    ::before {
+      content: '';
+      left: 0; top: -30px;
+      width: 0; height: 0;
+      position: absolute;
+    }
+  }
+  }
+  &__member {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__member:hover .b-portfolio-card {
+    opacity: 1;
+    }
+
+
+
   &__start-project {
     background: url("img/project.png") rgb(0, 100, 75, 0.7);
     background-blend-mode: overlay;
@@ -76,7 +153,11 @@
     text-align: center;
     position: relative;
     bottom: 104px;
+    padding: 0;
+    @include md {
+    bottom: 104px;
     padding-bottom: 16px;
+    }
   }
   &__start-btn {
   cursor: pointer;
@@ -88,8 +169,12 @@
   border-radius: 30px;
   padding: 4px 20px 4px 20px;
   position: relative;
+  bottom: 43px;
+  left: 3px;
+  @include md {
   bottom: 47px;
   left: 16px;
+  }
   }
   &__start-p {
     font-family:Tajawal;
@@ -98,28 +183,4 @@
     text-align: center;
     padding: 52px;
     }
-}
-.b-portfolio-card {
-  background-color:rgba(0, 0, 0, 0.5);
-  position: absolute; 
-  z-index: 1;
-  opacity: 0;
-  max-width: 260px;
-  max-height: 360px;
-  padding: 147px 0 135px 0;
-  ::before {
-    content: '';
-    left: 0; top: -30px;
-    width: 0; height: 0;
-    position: absolute;
-  }
-  &__member {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  &__member:hover .b-portfolio-card {
-    opacity: 1;
-   }
 }
