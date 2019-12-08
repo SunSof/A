@@ -38,10 +38,17 @@ padding-bottom: 143px;
   padding: 48px 0;
   position: relative;
   top: 42px;
+  margin-bottom: 20px;
+  @include md {
+    margin: 0;
+  }
 }
 &__up {
+  padding: 23px;
+  @include md {
   padding: 76px;
   margin-bottom: 54px;
+  }
 }
 &__input {
   background-color: Transparent;
@@ -49,15 +56,24 @@ padding-bottom: 143px;
   color: #c4c4c4;
   font-family: Abel;
   font-size: 16px;
+  margin: 6px;
   padding: 8px 0;
+  @include md {
   margin: 0;
+  }
 }
 &__empty {
-  height: 212px;
-  width: 945px;
+  height: 200px;
+  width: 290px;
   position: relative;
-  left: -19px;
-  margin: 23px;
+  left: 6px;
+  margin: 0px;
+  @include md {
+    height: 212px;
+    width: 945px;
+    left: -19px;
+    margin: 23px;
+  }
 }
 &__btn {
   cursor:pointer;
@@ -66,8 +82,13 @@ padding-bottom: 143px;
   overflow: hidden;
   outline:none;
   color: white;
-  padding: 8px 431px;
   position: relative;
+  padding: 8px 31px;
+  left: 67px;
+  top: 21px;
+  @include md {
+  padding: 8px 431px;
   left: 6px;
+  }
 }
 }

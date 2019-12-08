@@ -2,6 +2,11 @@
 .b-map {
   height: 100%;
   width: 100%;
-  padding: 0;
-  z-index: -1;
+  padding: 40px 0 0 0;
+  position: absolute;
+  @include md {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
 }

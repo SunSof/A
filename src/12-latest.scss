@@ -3,7 +3,10 @@
   background: url("img/Latest.png")rgba(0, 0, 0, 0.8);
   background-blend-mode: darken;
   background-position: center;
+  padding: 10px;
+  @include md {
   padding: 73px 0 89px 92px;
+  }
   &__h2 {
     color: #ffffff;
     font-family: Abel;
@@ -13,10 +16,10 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     padding-bottom: 23px;
-    // @include md {
-    // padding-top: 136px;
-    // line-height: 28px;
-    // }
+    text-align: center;
+    @include md {
+      text-align: left;
+    }
   }
   &__h4 {
     color: #ffffff;
@@ -25,10 +28,6 @@
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 81px;
-    // @include md {
-    // margin-bottom: 126px;
-    // line-height: 28px;
-    // }
   }
   &__title {
     color: #ffffff;
@@ -61,6 +60,9 @@
     font-size: 18px;
   }
   &__info{
-    padding-left: 74px;
+    text-align: left;
+    @include md {
+      padding-left: 74px;
+    }
   }
 }

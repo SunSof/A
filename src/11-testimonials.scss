@@ -1,21 +1,36 @@
 @import "./mixins.scss";
 .b-testimonials {
   background-color: rgb(231, 231, 231);
+  padding-bottom: 78px;
+  @include md {
   padding-bottom: 142px;
+  }
 &__card {
   background-color: #fff;
-  padding: 79px;
   position: relative;
+  padding: 10px;
+  @include md {
+  padding: 79px;
   top: 46px;
+  }
 }
 &__img {
+  bottom: 6px;
+  left: 89px;
 position: relative;
+@include md {
 bottom: 28px;
+left: 0;
+}
 }
 &__text {
 position: relative;
+text-align: center;
+@include md {
+  text-align: left;
 right: 308px;
 bottom: 26px;
+}
 }
 &__h2 {
   color: rgb(0, 194, 145);

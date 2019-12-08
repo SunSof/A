@@ -2,7 +2,10 @@
 .b-subscribe {
   background: url("img/subscribe.png")rgba(0, 0, 0, 0.8);
   background-blend-mode: darken;
+  padding-bottom: 20px;
+  @include md {
   padding-bottom: 99px;
+  }
   &__all {
     display: flex;
     flex-direction: row;
@@ -42,7 +45,12 @@
     outline:none;
     color: white;
     padding: 8px 53px;
-    margin-left: 9px;
+    margin-left: 9px; 
+    margin-top: 17px;
+    @include md {
+      margin-top: 0;
+    }
+
   }
   &__input {
     background-color: Transparent;
