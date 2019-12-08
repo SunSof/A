@@ -9,6 +9,12 @@
     background-repeat: no-repeat;
   }
 }
+@media (min-width: 768px) and (min-width: 1200px) {
+  .b-start {
+    background-color: #00c391;
+    background-image: none;
+  }
+}
 .b-start__logo {
   display: flex;
   flex-direction: row;
@@ -70,7 +76,6 @@
     background-color: Transparent;
     border: none;
     overflow: hidden;
-    outline: none;
     color: white;
     text-align: center;
     padding: 0 17px 0 16px;
@@ -155,11 +160,13 @@
     margin: 85px -23px;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
   .b-start__arrow {
-    bottom: 58px;
-    left: 49%;
-    margin: 82px 0;
+    border-radius: 20px 20px;
+    border: 1px solid;
+    background-color: Transparent;
+    color: white;
+    padding: 19px;
   }
 }
 .b-hello {
