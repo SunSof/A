@@ -1,18 +1,23 @@
 @import "./mixins.scss";
 .b-hello { 
+  padding-bottom: 40px;
+  @include md { 
+    padding-bottom: 0;
+  }
   &__text {
     padding: 36px 0 20px;
     @include md {
       padding: 114px 168px 0 250px;
-    }
-    @include sm {
-      padding: 62px 43px 0 20px;
     }
   }
   &__title {
     font-family: Abel;
     font-size: 20px;
     letter-spacing: 4px;
+    text-align: center;
+    @include md {
+      text-align: left;
+    }
   }
   &__subtitle {
     font-family:Tajawal;
@@ -26,13 +31,22 @@
     font-family:Tajawal;
     font-size: 18px;
     padding: 6px 32px 4px 32px;
-    left: -9px;
-    top: 35px;
+    left: 99px;
+    top: 5px;
     position: relative;
+    @include sm {
+      left: -9px;
+      top: 35px;
+      position: relative;
+    }
   }
   &__ipad {
-    padding: 88px 0 57px 0;
     position: relative;
-    left: -30px;
+   text-align: center;
+   top: 38px;
+    @include sm {
+    padding: 88px 0 57px 0;
+    right: 36px;
+    }
   }
 }

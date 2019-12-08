@@ -1,13 +1,16 @@
 @import "./mixins.scss";
 .b-submit {
-    background: url("img/mountin.jpg") rgb(0, 100, 75);
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
+  background: url("img/mountin.jpg") rgb(0, 100, 75);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 41px;
+  @include md {
     justify-content: space-around;
-    padding: 41px;
-   
+  }
+  
 
 &__btn {
   cursor:pointer;
@@ -20,11 +23,18 @@
   color: white;
   position: relative;
   right: 45px;
+  display: none;
+  @include md {
+    display: inline;
+  }
 }
 &__p {
   font-family: Tajawal;
   font-size: 22px;
   color: white;
   margin: 0;
+  text-align: center;
+  @include md {
+  }
 }
 }

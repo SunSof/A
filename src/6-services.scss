@@ -2,13 +2,19 @@
 .b-services {
   background-color:rgb(243, 243, 243);
   padding-bottom: 97px;
-  &__btn-all {
+  &__btn-all { 
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     position: relative;
-    left: 30px;
-    top: 67px;
+    top: 56px;
+    @include md {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      left: 30px;
+      top: 67px;
+    }
   }
   &__btn {
     cursor: pointer;
@@ -26,13 +32,20 @@
   }
   &__text {
     position: relative;
+    top: 100px;
+    @include md {
     right: 208px;
     top: 119px;
+    }
   }
   &__diagramma {
     position: relative;
     top: 106px;
-    right: 51px;
+    right: 40px;
+    @include md {
+      top: 106px;
+      right: 94px;
+    }
   }
   &__repair {
     background-image: url("img/repair.png");
