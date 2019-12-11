@@ -1,15 +1,14 @@
 @import "./mixins.scss";
 .b-team {
   padding-bottom: 130px;
-  @include md {
+  @include lg {
   padding-bottom: 213px;
   }
   &__img {
   position: relative;
-  top: 43px;
-  left: 58px;
-  @include md {
-  left: 36px;
+  text-align: center;
+  @include lg {
+    right: 116px;
   top: 65px;
   }
   }
@@ -17,10 +16,14 @@
   position: relative;
   text-align: center;
   top: 65px;
-  @include md {
+  @include lg {
+  top: 167px;
+  left: -26px;
+  }
+  @include xl {
     text-align: right;
-  top: 168px;
-  left: 304px;
+    top: 168px;
+    left: 7px;
   }
   }
   &__p {

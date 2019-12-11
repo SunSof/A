@@ -3,9 +3,7 @@
 background: rgb(223, 223, 223);
 padding-bottom: 143px;
   &__card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
   }
   &__bg-all {
     background-blend-mode: darken;
@@ -58,20 +56,30 @@ padding-bottom: 143px;
   font-size: 16px;
   margin: 6px;
   padding: 8px 0;
-  @include md {
+  @include sm {
+  height: 40px;
+  width: 600px;
+  }
+  @include lg {
   margin: 0;
+  width: 285px;
   }
 }
 &__empty {
+  position: relative;
   height: 200px;
   width: 290px;
-  position: relative;
   left: 6px;
   margin: 0px;
-  @include md {
+  @include sm {
+    height: 200px;
+    width: 600px;
+    margin: 0px;
+  }
+  @include lg {
     height: 212px;
     width: 945px;
-    left: -19px;
+    left: -23px;
     margin: 23px;
   }
 }
@@ -86,9 +94,16 @@ padding-bottom: 143px;
   padding: 8px 31px;
   left: 67px;
   top: 21px;
-  @include md {
+  @include sm {
+    height: 40px;
+    width: 600px;
+    left: 6px;
+    margin: 0px;
+  }
+  @include lg {
   padding: 8px 431px;
-  left: 6px;
+  left: 0;
+  width: 945px;
   }
 }
 }

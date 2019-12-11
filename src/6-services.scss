@@ -8,7 +8,7 @@
     justify-content: center;
     position: relative;
     top: 56px;
-    @include md {
+    @include lg {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -33,7 +33,7 @@
   &__text {
     position: relative;
     top: 100px;
-    @include md {
+    @include lg {
     right: 208px;
     top: 119px;
     }
@@ -42,9 +42,16 @@
     position: relative;
     top: 106px;
     right: 40px;
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     @include md {
-      top: 106px;
-      right: 94px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    
     }
   }
   &__repair {

@@ -7,7 +7,7 @@
   &__text {
     position: relative;
     padding: 20px;
-    @include md {
+    @include lg {
     top: 71px;
     left: 81px;
     padding: 0;
@@ -43,14 +43,14 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
-    @include md {
+    @include lg {
       font-size: 17px;
     }
   }
 }
 .logo {
   display: none;
-  @include md {
+  @include lg {
  display: inline;
 position: relative;
 left: 289px;
@@ -60,7 +60,7 @@ z-index: 2;
 }
 .mac {
   display: none;
-  @include md {
+  @include lg {
  display: inline;
 position: relative;
 left: 145px;

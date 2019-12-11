@@ -8,7 +8,9 @@
   }
   &__img {
     margin-bottom: 10px;
-    @include md { 
+    background-repeat: no-repeat;
+    text-align: center;
+    @include lg { 
       margin: 0;
     }
     &:hover {
