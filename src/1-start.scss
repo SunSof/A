@@ -60,7 +60,9 @@
       display: inline;
       cursor:pointer;
       background-color: Transparent;
-      border: none;
+      border: 1px solid;
+      border-radius: 15px;
+      border-color: transparent;
       overflow: hidden;
       color: white;
       text-align: center;
@@ -74,7 +76,9 @@
       font-size: 14px;
       cursor:pointer;
       background-color: Transparent;
-      border: none;
+      border: 1px solid;
+      border-radius: 15px;
+      border-color: transparent;
       overflow: hidden;
       outline: none;
       color: white;
