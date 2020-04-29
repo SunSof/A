@@ -4,13 +4,17 @@
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 40px;
+  @include xl {
+    padding: 0;
+  }
   &__text {
     position: relative;
     padding: 20px;
-    @include lg {
-    top: 71px;
-    left: 81px;
-    padding: 0;
+    @include xl {
+      top: 71px;
+      left: 81px;
+      padding: 0;
     }
   }
   &__h2 {
@@ -24,14 +28,14 @@
   }
   &__h4 {
     color: #ffffff;
-    font-family:Tajawal;
+    font-family: Tajawal;
     font-size: 17px;
     font-weight: 400;
     text-transform: uppercase;
   }
   &__h3 {
     color: #ffffff;
-    font-family:Tajawal;
+    font-family: Tajawal;
     font-size: 18px;
     font-weight: 400;
     line-height: 14px;
@@ -39,32 +43,32 @@
   }
   &__p {
     color: #ffffff;
-    font-family:Montserrat;
+    font-family: Montserrat;
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
-    @include lg {
+    @include xl {
       font-size: 17px;
     }
   }
 }
 .logo {
   display: none;
-  @include lg {
- display: inline;
-position: relative;
-left: 289px;
-bottom: -28px;
-z-index: 2;
+  @include xl {
+    display: inline;
+    position: relative;
+    left: 289px;
+    bottom: -28px;
+    z-index: 2;
   }
 }
 .mac {
   display: none;
-  @include lg {
- display: inline;
-position: relative;
-left: 145px;
-top: -105px;
-z-index: 1;
+  @include xl {
+    display: inline;
+    position: relative;
+    left: 145px;
+    top: -105px;
+    z-index: 1;
   }
 }
