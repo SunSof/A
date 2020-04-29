@@ -2,6 +2,7 @@
 .b-contacts {
   background: rgb(223, 223, 223);
   padding-bottom: 143px;
+  
   &__img {
     height: 173px;
     width: 287px;
@@ -44,11 +45,15 @@
     font-size: 16px;
     margin: 6px;
     padding: 8px 0;
-    @include sm {
+    @include md {
       height: 40px;
       width: 600px;
     }
     @include lg {
+      width: 260px;
+      margin-bottom: 20px;
+    }
+    @include xl {
       margin: 0;
       width: 285px;
     }
@@ -59,12 +64,17 @@
     width: 290px;
     left: 6px;
     margin: 0px;
-    @include sm {
+    @include md {
       height: 200px;
       width: 600px;
       margin: 0px;
     }
     @include lg {
+      height: 200px;
+      width: 800px;
+      margin: 0px;
+    }
+    @include xl {
       height: 212px;
       width: 945px;
       left: -23px;
@@ -82,13 +92,17 @@
     padding: 8px 31px;
     left: 67px;
     top: 21px;
-    @include sm {
+    @include md {
       height: 40px;
       width: 600px;
       left: 6px;
       margin: 0px;
     }
     @include lg {
+      width: 800px;
+      margin: 0px;
+    }
+    @include xl {
       padding: 8px 431px;
       left: 0;
       width: 945px;
