@@ -1127,27 +1127,9 @@
   background: #dfdfdf;
   padding-bottom: 143px;
 }
-.b-contacts__bg-all {
-  background-blend-mode: darken;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  top: 43px;
-}
-.b-contacts__bg1 {
-  background: url("/office.12141443.jpg") rgba(0, 0, 0, 0.5);
-  background-size: 100%;
-  padding: 60px 122px;
-}
-.b-contacts__bg2 {
-  background: url("/office2.7a52f276.jpeg") rgba(0, 0, 0, 0.5);
-  background-size: 100%;
-  padding: 48px 126px;
-}
-.b-contacts__bg3 {
-  background: url("/office3.66e86141.jpg") rgba(0, 0, 0, 0.5);
-  background-size: 100%;
-  padding: 51px 123px;
+.b-contacts__img {
+  height: 173px;
+  width: 287px;
 }
 .b-contacts__title {
   background-color: #fff;
@@ -1156,14 +1138,14 @@
   margin: 0;
   width: 287px;
   padding: 48px 0;
-  position: relative;
-  top: 42px;
-  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .b-contacts__title {
     margin: 0;
   }
+}
+.b-contacts__card {
+  padding-top: 60px;
 }
 .b-contacts__up {
   padding: 23px;
