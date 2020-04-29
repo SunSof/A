@@ -1,8 +1,8 @@
 @import "./mixins.scss";
 .b-services {
-  background-color:rgb(243, 243, 243);
+  background-color: rgb(243, 243, 243);
   padding-bottom: 97px;
-  &__btn-all { 
+  &__btn-all {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,40 +18,37 @@
   }
   &__btn {
     cursor: pointer;
-    background-color:rgb(117, 117, 117);
+    background-color: rgb(117, 117, 117);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 30px;
-    border:none;
+    border: none;
     padding: 26px;
     width: 20px;
     margin: 9px;
     &:hover {
-      background-color:rgb(0, 194, 145);
+      background-color: rgb(0, 194, 145);
     }
   }
   &__text {
     position: relative;
     top: 100px;
     @include lg {
-    right: 208px;
-    top: 119px;
+      right: 208px;
+      top: 119px;
     }
   }
   &__diagramma {
     position: relative;
     top: 106px;
-    right: 40px;
     @include sm {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-    @include md {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-    
+      align-items: center;
+      @include lg {
+        display: flex;
+        justify-content: flex-end;
+      }
     }
   }
   &__repair {
